@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <div class="">
+            <label for="BMI">BMI</label>
+            <select name="BMI" id="BMI">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+            
+        <div class="">
+            <label for="HighChol">HighChol</label>
+            <select name="HighChol" id="HighChol">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="">
+            <label for="Smoker">Smoker</label>
+            <select name="Smoker" id="Smoker">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        Class: {{result}} <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
